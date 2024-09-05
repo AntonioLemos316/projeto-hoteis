@@ -8,9 +8,9 @@
     "dev": "nodemon server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Antonio",
   "license": "ISC",
-  "description": "",
+  "description": "Base para estudo da materia de back-end com node/express e Arq MVC",
   "dependencies": {
     "express": "^4.19.2",
     "mysql2": "^3.11.0"

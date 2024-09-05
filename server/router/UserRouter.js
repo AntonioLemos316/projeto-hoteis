@@ -1,6 +1,15 @@
-import express from 'express'
-import { buscarAllUserCont } from '../controller/UserController.js'
+// Importa o módulo express, que é utilizado para criar um roteador de rotas
+import express from 'express';
 
-export const router = express.Router()
+// Importa o controlador que contém a lógica para buscar todos os usuários
+// Presume-se que o controlador esteja definido em '../controller/UserController.js'
+import { buscarAllUserCont } from '../controller/UserController.js';
 
-router.get('/buscarAll', buscarAllUserCont)
+// Cria uma instância do roteador Express
+// O roteador é utilizado para definir e agrupar as rotas da API
+export const router = express.Router();
+
+// Define uma rota GET para o caminho '/buscarAll'
+// Quando uma requisição GET é feita para '/api/buscarAll', o controlador buscarAllUserCont é chamado
+// O controlador é responsável por processar a requisição e gerar a resposta
+router.get('/buscarAll', buscarAllUserCont);
